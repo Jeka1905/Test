@@ -1,0 +1,358 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-image: url("img/2.jpg"); /* Путь к вашей фотографии */
+   background-size: cover;
+   background-position: auto;
+}
+
+header {
+   background-color: rgba(51, 51, 51, 0.8); /* Прозрачный цвет фона для улучшения читаемости текста */
+   color: #fff;
+   padding: 1px;
+   border-bottom: 2px solid #fff;
+}
+.Label {
+   font-family: URW Chancery L, cursive;
+   display: inline-block;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+
+nav ul li {
+   display: inline;
+}
+
+nav ul li a {
+   color: #fff;
+   text-decoration: none;
+   padding: 0 15px;
+}
+.info-banner {
+   text-align: left;
+   background-color: rgba(51, 51, 51, 0.8);
+   padding: 1px; /* Внутренние отступы */
+   border-bottom: 2px solid #fff;
+   overflow: hidden;
+}
+.info-banner ul {
+   list-style-type: none;
+   padding: 0;
+   font-weight: 300;
+   color: #fff;
+}
+
+.info-banner li {
+   display: inline;
+   margin-right: 20px; /* Добавьте немного отступа между элементами */
+}
+
+.info-banner ul {
+   /* Убираем внешние отступы у текста */
+   overflow: hidden; /* Скрытие текста, который не помещается внутри блока */
+   white-space: nowrap; /* Запрет переноса строки */
+   animation: marquee 30s linear infinite; /* Запуск анимации с бесконечным повторением */
+}
+/* Скрываем полосу прокрутки */
+.info-banner ul::-webkit-scrollbar {
+   display: none; /* Для WebKit (Chrome, Safari) */
+}
+
+.info-banner ul {
+   scrollbar-width: none; /* Для Firefox */
+}
+@keyframes marquee {
+   0% {
+      transform: translateX(100%);
+   }
+   100% {
+      transform: translateX(-100%);
+   }
+}
+.main-content {
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #ffffff; /* Изменяем цвет текста основного контента для лучшей читаемости */
+   margin-bottom: 100px;
+   text-align: center;
+}
+
+.container {
+   display: flex;
+   margin-bottom: 72px;
+}
+@media (max-width: 920px) {
+   .container {
+      flex-direction: row;
+   }
+}
+
+article {
+   text-align: left;
+   margin: 1%;
+}
+#table-container {
+   margin: 0 auto;
+   width: 80%; /* Ширина таблицы */
+}
+
+table {
+   border-collapse: collapse;
+   margin: 0 auto;
+   /* width: 100%; */
+}
+
+table,
+th,
+td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: center;
+}
+
+th {
+   background-color: rgba(51, 51, 51, 0.8);
+}
+.sidenav {
+   /* height: calc(100% - 145px);
+   width: 200px;
+   position: fixed;
+   z-index: 1;
+   top: 145px;
+   right: 0; */
+   width: 100%;
+   max-width: 200px;
+   align-items: stretch;
+   background-color: rgba(51, 51, 51, 0.8);
+   overflow-x: hidden;
+   text-align: center;
+   border-left: 2px solid #fff;
+   display:flex;
+   
+   
+}
+@media (max-width: 920px) {
+   .sidenav {
+      max-width: 100%;
+      display: inline-block;
+      
+   }
+}
+.menu {
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   align-items: center;
+   padding: 20px 0;
+   justify-content: flex-end;
+   align-items: flex-start;
+   margin-top: 20px;
+}
+@media (max-width: 920px) {
+   .menu {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+   }
+}
+/* Стили для кнопок */
+.menu li {
+   list-style-type: none; /* Убираем маркеры списка */
+   /* margin-bottom: 10px; Расстояние между кнопками */
+}
+
+.menu li button {
+   
+   margin-top: -70px;
+   display: flex;
+   background-color: #39863b; /* Зеленый цвет фона */
+   color: white; /* Белый цвет текста */
+   padding: 10px 20px; /* Поля внутри кнопки */
+   border: none; /* Убираем границу */
+   cursor: pointer; /* Изменение курсора при наведении */
+   border-radius: 5px; /* Закругление углов */
+   /* margin: 20px auto 10px auto;
+   margin-bottom: 10px; */
+  
+}
+
+/* Стили для наведения курсора на кнопку */
+.menu li button:hover {
+   background-color: #45a049; /* Темно-зеленый цвет фона */
+}
+
+.sidenew {
+   min-height: 100%;
+   width: 100%;
+   max-width: 240px;
+   background-color: rgba(51, 51, 51, 0.8);
+   text-align: center;
+   border-right: 2px solid #fff;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+@media (max-width: 920px) {
+   .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+   .sidenew {
+     width: 100%;
+     max-width: none;
+     border-right: none;
+     border-bottom: 2px solid #fff;
+     order: 2; /* Помещаем блок .sidenew внизу */
+   }
+ 
+   .mini-news-block {
+     order: 1; /* Помещаем блок .mini-news-block сверху */
+     width: 50%;
+     max-width: none;
+   }
+ }
+ 
+ 
+
+.mini-news-block {
+   max-width: 100%; /* Изменено на 100% для растягивания на всю ширину экрана */
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease;
+   overflow: hidden;
+   color: #fff;
+}
+
+.mini-news-block img {
+   width: 100%;
+   border-radius: 10px;
+}
+
+.mini-news-block h3 {
+   margin-top: 10px;
+   font-size: 16px;
+}
+
+.mini-news-block p {
+   font-size: 14px;
+}
+
+.mini-news-block:hover {
+   transform: scale(1.1);
+}
+
+.menu {
+   list-style-type: none;
+}
+
+.menu li {
+   padding: 8px 0;
+}
+
+.menu li a {
+   text-decoration: none;
+   color: #818181;
+   font-size: 25px;
+   display: block;
+   padding: 8px 16px;
+}
+
+.menu li a:hover {
+   color: #f1f1f1;
+}
+
+.info-banner ul {
+   list-style-type: none;
+   padding: 0;
+   font-weight: 300;
+   color: #fff;
+   white-space: nowrap; /* Организация одного ряда текста */
+   overflow: hidden; /* Скрытие текста, который не помещается в один ряд */
+}
+
+
+footer {
+   background-color: rgba(51, 51, 51, 0.8);
+   color: #fff;
+   text-align: center;
+   padding: 10px 0;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   border-top: 2px solid #fff;
+}
+/* Основні стилі */
+
+@media (max-width: 400px) {
+   /* Медіа-запит для мобільних пристроїв */
+   /* 4.1. Приховати інформаційний блок */
+   .info-banner {
+      display: none;
+   }
+   menu li button {
+      
+      margin-top: -70px;
+      display: flex;
+      background-color: #39863b; /* Зеленый цвет фона */
+      color: white; /* Белый цвет текста */
+      padding: 10px 20px; /* Поля внутри кнопки */
+      border: none; /* Убираем границу */
+      cursor: pointer; /* Изменение курсора при наведении */
+      border-radius: 5px;
+     
+   }
+   /* 4.2. Бокове меню розміщується над основним контентом та вирівняні по вертикалі */
+   .sidenav {
+      width: 100%;
+      max-width: 240px;
+      background-color: rgba(51, 51, 51, 0.8);
+      text-align: center;
+      border-left: 2px solid #fff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+      
+      
+      
+   }
+ 
+   /* 4.3. Додаткові статі розміщуємо під основним контентом та вирівняні по вертикалі */
+   .mini-news-block {
+      width: 100%;
+      max-width: none;
+      align-self: center; /* Центруємо по горизонталі */
+   }
+ 
+   /* 4.4. Зменшуємо розмір заголовку в шапці сайту */
+   header {
+      font-size: 18px; /* Змініть розмір на необхідний */
+      
+   }
+ 
+   /* 4.5. Вирівнюємо інформацію про розробника по правому краю та розміщуємо її вертикально */
+   footer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+   }
+ }
+ 

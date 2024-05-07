@@ -1,0 +1,67 @@
+* Стилі для десктопної версії (ширина екрана більше 768px) */
+@media screen and (min-width: 1024px) {
+    /* Горизонтальне бокове меню */
+    .sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0; /* Заповнює доступний простір зверху до низу */
+    overflow-x: auto; /* Додайте прокрутку, якщо необхідно */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Розміщення елементів у вертикальному порядку */
+
+}
+
+
+    /* Горизонтальне бокове меню - кнопки */
+    .menu li {
+        display: inline-block; /* Розміщення кнопок в одному ряду */
+        margin: 10px; /* Відступ між кнопками */
+    }
+
+    /* Основний контент */
+    .main-content {
+        padding: 0 220px; 
+        color: #ffffff; /* Изменяем цвет текста основного контента для лучшей читаемости */
+        margin-bottom: 100px; 
+        text-align: center;
+    }
+}
+
+
+
+
+  
+    
+    .menu li {
+        list-style-type: none; /* Убираем маркеры списка */
+        margin-bottom: 10px; /* Расстояние между кнопками */   
+    }
+    
+    .menu li button {
+        display: inline-block;
+        background-color: #39863b; /* Зеленый цвет фона */
+        color: white; /* Белый цвет текста */
+        padding: 10px 20px; /* Поля внутри кнопки */
+        border: none; /* Убираем границу */
+        cursor: pointer; /* Изменение курсора при наведении */
+        border-radius: 5px; /* Закругление углов */
+        margin: 20px auto 10px auto;
+        margin-bottom: 10px;
+        width: 100px;
+        
+    }
+    
+    /* Стили для наведения курсора на кнопку */
+    .menu li button:hover {
+        background-color: #45a049; /* Темно-зеленый цвет фона */
+    }
+    .main-content {
+        padding: 0 220px; 
+        color: #ffffff; /* Змінюємо колір тексту основного контенту для кращої читабельності */
+        margin-bottom: 100px; 
+        text-align: center;
+        width: auto; /* Змінюємо ширину на автоматичну */
+    }
