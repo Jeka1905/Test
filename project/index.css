@@ -19,7 +19,9 @@ header {
    background-color: rgba(51, 51, 51, 0.8); /* Прозрачный цвет фона для улучшения читаемости текста */
    color: #fff;
    padding: 1px;
-   border-bottom: 2px solid #fff;
+   border-bottom: 2px solid #fff
+   
+   
 }
 .Label {
    font-family: URW Chancery L, cursive;
@@ -84,28 +86,29 @@ nav ul li a {
    }
 }
 .main-content {
-   padding: 0 20px;
+  
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    text-align: center;
    color: #ffffff; /* Изменяем цвет текста основного контента для лучшей читаемости */
-   margin-bottom: 100px;
+   margin-bottom: 10px;
    text-align: center;
+  
+   
+
+   
 }
 
 .container {
    display: flex;
-   margin-bottom: 72px;
-   max-width: 90%; /* Устанавливаем максимальную ширину для контейнера */
+   margin-bottom: 0px;
+   max-width: 100%; /* Устанавливаем максимальную ширину для контейнера */
    overflow: hidden; /* Добавляем скрытие контента, если он выходит за пределы контейнера */
 }
-@media (max-width: 920px) {
-   .container {
-      flex-direction: row;
-   }
-}
+
+
 
 article {
    text-align: left;
@@ -197,24 +200,27 @@ th {
 
 .container {
    display: flex;
-   flex-direction: row; /* По умолчанию, горизонтальное расположение на больших экранах */
-   justify-content: space-between; /* Распределение блоков по краям контейнера */
+   flex-direction: row-reverse; /* По умолчанию, горизонтальное расположение на больших экранах */
+   justify-content: space-between;
+   width: 100%; /* Распределение блоков по краям контейнера */
 }
 
 .sidenew {
-   height: calc(100% - 135px);;
-   width: 220px;
-   position: fixed;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start; /* выравнивание содержимого вверху */
+   align-items: center; /* выравнивание содержимого по центру горизонтально */
    z-index: 1;
-   top: 220px;
-   right:  0;
+   top: 220px; /* высота header */
+   right: 0; /* расположение по правой стороне */
    background-color: rgba(51, 51, 51, 0.8);
-   overflow-x:hidden;
+   overflow-y: auto; /* Убираем вертикальную полосу прокрутки */
+   overflow-x: hidden; /* Убираем горизонтальную полосу прокрутки */
    text-align: center;
-   border-left:2px solid #fff ;
-   
+   border-left: 2px solid #fff;
+   width: 30%;
 }
-
 
 .mini-news-block {
    max-width: 100%; /* Изменено на 100% для растягивания на всю ширину экрана */
@@ -227,7 +233,7 @@ th {
 }
 
 .mini-news-block img {
-   width: 100%;
+   width: 90%;
    border-radius: 10px;
 }
 
@@ -281,75 +287,156 @@ th {
    background-color: rgba(255, 255, 255, 0.9);
    overflow-y: auto; /* Разрешаем вертикальную прокрутку */
    max-height: 200px; /* Максимальная высота блока */
+   color: #fff;
 }
-
 
 footer {
    background-color: rgba(51, 51, 51, 0.8);
    color: #fff;
    text-align: center;
-   padding: 10px 0;
-   position: fixed;
+   padding: 10px 0; /* Немного изменил padding для лучшего отображения */
+   position: relative;
    left: 0;
    bottom: 0;
    width: 100%;
    border-top: 2px solid #fff;
-   z-index: -1;
+   z-index: 1000; /* Установил положительное значение z-index */
 }
-/* Основні стилі */
 
-@media (max-width: 400px) {
-   /* Медіа-запит для мобільних пристроїв */
-   /* 4.1. Приховати інформаційний блок */
-   .info-banner {
-      display: none;
-   }
-   menu li button {
-      
-      margin-top: -70px;
-      display: flex;
-      background-color: #39863b; /* Зеленый цвет фона */
-      color: white; /* Белый цвет текста */
-      padding: 10px 20px; /* Поля внутри кнопки */
-      border: none; /* Убираем границу */
-      cursor: pointer; /* Изменение курсора при наведении */
-      border-radius: 5px;
-     
-   }
-   /* 4.2. Бокове меню розміщується над основним контентом та вирівняні по вертикалі */
-   .sidenav {
-      width: 100%;
-      max-width: 240px;
-      background-color: rgba(51, 51, 51, 0.8);
-      text-align: center;
-      border-left: 2px solid #fff;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      
-      
-      
-      
-   }
- 
-   /* 4.3. Додаткові статі розміщуємо під основним контентом та вирівняні по вертикалі */
-   .mini-news-block {
-      width: 100%;
-      max-width: none;
-      align-self: center; /* Центруємо по горизонталі */
-   }
- 
-   /* 4.4. Зменшуємо розмір заголовку в шапці сайту */
-   header {
-      font-size: 18px; /* Змініть розмір на необхідний */
-      
-   }
- 
-   /* 4.5. Вирівнюємо інформацію про розробника по правому краю та розміщуємо її вертикально */
-   footer {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-   }
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+:root {
+  --card-color: #041d5d;
+}
+
+.pricing {
+  padding: 60px 0;
+
+
+}
+.pricing__grid {
+  display: grid;
+  gap: 150px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.pricing-card {
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   background: #01e728;
+   border: 1px solid transparent;
+   transition: all 0.6s ease;
+   transform: perspective(1000px);
+   width: 340px; /* Adjust the width as needed */
+   height:70vh; /* Adjust the height as needed */
  }
+ 
+.pricing-card:hover {
+  transform: perspective(1000px) scale(0.97) translateZ(10px) rotateY(-10deg);
+  border-color: #1b4cc8;
+}
+.pricing-card:hover .pricing-card__top {
+  transform: perspective(1000px) translateZ(5px) scale(1.01) translateX(-20px) translateY(-15px);
+  opacity: 0.9;
+}
+.pricing-card:hover .pricing-card__button a {
+  transform: perspective(1000px) translateZ(5px) scale(1.01) translateX(-15px) translateY(5px);
+}
+.pricing-card__top {
+  transition: all 0.6s ease;
+  border-radius: 15px;
+  background: var(--card-color);
+  position: relative;
+  padding: 20px 30px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transform: perspective(1000px);
+  height: 150vh;
+ 
+}
+.pricing-card__top img{
+ width: 100%;
+ height: 40vh; 
+    
+}
+
+   
+
+.pricing-card__title {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 80px;
+}
+.pricing-card__price {
+  font-size: 700;
+  font-size: 24px;
+  align-self: flex-end;
+}
+.pricing-card__price span {
+  font-weight: 300;
+  font-size: 14px;
+}
+.pricing-card__body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.pricing-card__pluses {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.pricing-card__plus {
+  font-size: 12px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+.pricing-card__plus:not(:last-child) {
+  margin-bottom: 10px;
+}
+.pricing-card__plus-icon {
+  margin-right: 15px;
+  line-height: 1;
+  color: var(--card-color);
+}
+.pricing-card__plus-text,
+.pricing-card__button {
+  display: flex;
+  justify-content: flex-end;
+}
+.pricing-card__plus-text a,
+.pricing-card__button a {
+  display: inline-flex;
+  height: 40px;
+  width: 160px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--card-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+  border: 1px solid transparent;
+  transform: perspective(1000px);
+}
+.pricing-card_free {
+  --card-color: #051e5d;
+}
+.pricing-card_premium {
+  --card-color: #051e5d;
+}
+
+
+
  
