@@ -117,6 +117,8 @@ article {
 #table-container {
    margin: 0 auto;
    width: 80%; /* Ширина таблицы */
+   margin-bottom: 30px;
+   
 }
 
 table {
@@ -248,6 +250,7 @@ th {
 
 .mini-news-block:hover {
    transform: scale(1.1);
+   color:#388aa1;
 }
 
 .menu {
@@ -310,11 +313,12 @@ footer {
 }
 
 .pricing {
-  padding: 60px 0;
+  padding: 60px ;
 
 
 }
 .pricing__grid {
+   
   display: grid;
   gap: 150px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -437,6 +441,211 @@ footer {
   --card-color: #051e5d;
 }
 
+#table-container { /* таблица с результатами матчей*/
+   width: 80%;
+   margin: 0 auto;
+   max-width: 800px;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+th, td {
+   border: 1px solid #ddd;
+   padding: 8px;
+   text-align: center;
+}
+
+th {
+   background-color: #f2f2f2;
+   color: black;
+}
+
+.team-cell {
+   text-align: center;
+   white-space: nowrap;
+}
+
+.team-logo {
+   width: 20px;
+   height: 20px;
+   vertical-align: middle;
+   margin: 0 5px;
+}
+
+
+table {
+   margin: 0 auto;
+   width: 80%; /* Ограничиваем ширину таблицы */
+   border-collapse: collapse;
+}
+
+th, td {
+   padding: 8px 12px;
+   border: 1px solid #ddd;
+}
+
+#matches-container-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center; /* Центрируем содержимое по горизонтали */
+   margin-top: 20px; /* Добавляем отступ сверху */
+   overflow: hidden;
+}
+
+#scroll-left,
+#scroll-right {
+   background-color: #ff6f00;
+   color: #fff;
+   border: none;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 10px;
+}
+
+#matches-container {
+   display: flex;
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   width: calc(100% - 80px); /* Учитываем ширину кнопок */
+   max-width: 100%; /* Ограничиваем максимальную ширину */
+   padding: 10px;
+}
+
+.match-card {
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   padding: 10px;
+   width: 150px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   margin-right: 10px;
+   flex-shrink: 0;
+}
+
+.tournament {
+   font-size: 12px;
+   color: #888;
+}
+
+.time {
+   background-color: #ff6f00;
+   color: #fff;
+   border-radius: 12px;
+   padding: 2px 6px;
+   font-size: 12px;
+   margin: 5px 0;
+}
+
+.teams {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   margin: 5px 0;
+}
+
+.team {
+   display: flex;
+   align-items: center;
+   color: #000;
+}
+
+.team-logo {
+   width: 20px;
+   height: 20px;
+   margin-right: 5px;
+}
+
+.score {
+   font-size: 18px;
+   font-weight: bold;
+   color: #ff0000;
+}
+
+
+.league-table {
+   width: 100%;
+   max-width: 600px;
+   margin: 0 auto;
+   background: rgb(87, 114, 179);
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+}
+
+.league-table h2 {
+   text-align: center;
+   margin-top: 20px;
+}
+
+#league-selector {
+   display: block;
+   margin: 10px auto;
+   padding: 5px;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   text-align: left;
+   
+}
+
+th, td {
+   padding: 10px;
+   border-bottom: 1px solid #ddd;
+}
+
+th {
+   background-color: #ffffff;
+}
+
+.team-logo {
+   width: 20px;
+   height: 20px;
+   vertical-align: middle;
+   margin-right: 10px;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+   background-color: #fff;
+}
+
+tbody tr:hover {
+   background-color: #f1f1f1;
+}
+
+td {
+   color: #000;
+}
+
+td:nth-child(1), td:nth-child(3), td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child(7) {
+   text-align: center;
+}
+
+.league-table-content {
+   display: none;
+}
+
+.league-table-content.active {
+   display: table;
+}
 
 
  

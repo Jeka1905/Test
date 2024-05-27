@@ -14,19 +14,19 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><button onclick="scrollToSection('main')">Главная</button></li>
-                <li><button onclick="scrollToMatches()">Матчи</button></li>
-                <li><button onclick="scrollToMatches()">Команды</button></li>
-                <li><button onclick="scrollToSection('news')">Новости</button></li>
+                <li><button onclick="scrollToSection('main')">Головна</button></li>
+                <li><button onclick="scrollToTableContainer('table-container')">Матчі</button></li>
+                <li><button onclick="scrollToTeams('teams')">Команди</button></li>
+                <li><button onclick="scrollToLeaguetable('Leaguetable')">Турніри</button></li>
             </ul>
         </nav>
     </header>
 
     <div id="matches" class="info-banner">
         <ul>
-            <li>Матчи</li>
-            <li>Команды</li>
-            <li>Новости</li>
+            <li>Матчі</li>
+            <li>Команди</li>
+            <li>Турніри</li>
         </ul>
     </div>
    
@@ -35,146 +35,690 @@
             <div class="sidenew">
                 <div class="mini-news-block">
                     <img src="img/news1.jpg" alt="News 1">
-                    <h3>Ньюкасл – Тоттенхэм. Анонс и прогноз матча 33-го тура АПЛ на 13.04.2024</h3>
+                    <h3>Ньюкасл - Тоттенгем. Анонс і прогноз матчу 33-го туру АПЛ на 13.04.2024</h3>
                 </div>
                 <div class="mini-news-block">
                     <img src="img/news2.jpeg" alt="News 2">
-                    <h3>Не могут определиться. Бавария решает, кого назначить главным тренером на следующий сезон</h3>
+                    <h3>Не можуть визначитися. Баварія вирішує, кого призначити головним тренером на наступний сезон</h3>
+                </div>
+                <div class="mini-news-block">
+                    <img src="img/image2.jpg" alt="News 3">
+                    <h3>Норвезький пітбуль з рожевим волоссям: обеззброїв Мбаппе та став символом Борусії</h3>
+                </div>
+                <div class="mini-news-block">
+                    <img src="img/image3.jpg" alt="New 4">
+                    <h3>Динамо ризикує залишитись без групового етапу єврокубків – стало відомо, де розпочнеться шлях киян у Лізі чемпіонів</h3>
+                </div>
+                <div class="mini-news-block">
+                    <img src="img/ima3ge.jpg" alt="New 3">
+                    <h3>"Кройф не взяв єдиного, кого я боявся": як знекровлений Мілан знищив Барселону в афінському фіналі ЛЧ</h3>
+                </div>
+                <div class="mini-news-block">
+                    <img src="img/imag4e.jpg" alt="New 4">
+                    <h3>Лунін повинен сам визначити своє майбутнє – два топ-клуби чекають, фінал ЛЧ вирішить все</h3>
+                </div>
+                <div class="mini-news-block">
+                    <img src="img/ima33ge.jpg" alt="New 5">
+                    <h3>Довбик "жадібно" забирав штрафний у Циганкова – ветеран Жирони показав Артему його місце</h3>
+                </div>
+                <div class="mini-news-block">
+                    <img src="img/image6.jpg" alt="New 6">
+                    <h3>Интер Майами без Месси и Суареса дожал Ванкувер и остался лидером – Кривцов стал одним из лучших</h3>
+                </div>
+                <div class="mini-news-block">
+                    <img src="img/image7.jpg" alt="New 7">
+                    <h3>Реал расписал ничью с Бетисом в матче-репетиции финала Лиги чемпионов – Куртуа вышел в основе и снова был крутым</h3>
                 </div>
             </div>
             <div class="main-content">
                 <article>
-                    <h2>Неймар вернулся в строй и готов к выходу на поле</h2>
-                    <p>После нескольких недель вне игры из-за травмы, звезда парижского клуба "Пари Сен-Жермен" Неймар
-                        Jr. наконец вернулся в строй и готов к возвращению на футбольное поле. Бразильский нападающий,
-                        который получил повреждение в матче Лиги чемпионов в прошлом месяце, успешно прошел реабилитацию
-                        и тренировки под руководством медицинского штаба клуба.</p>
-                    <p>Травма, которую получил Неймар, вызвала опасения среди болельщиков и тренерского штаба "ПСЖ", но
-                        благодаря тщательному медицинскому вмешательству и упорному труду самого футболиста, он
-                        восстановился даже раньше, чем ожидалось.</p>
-                    <p>Ожидается, что возвращение Неймара на поле значительно усилит атакующий потенциал парижской
-                        команды и поможет ей бороться за победы как в национальном, так и в европейском масштабе.
-                        Поклонники футбола с нетерпением ждут его возвращения и надеются увидеть блестящие выступления
-                        от этого талантливого игрока.</p>
+                    <h2>Неймар повернувся в стрій і готовий до виходу на поле</h2>
+                    <p>Після кількох тижнів поза грою через травму, зірка паризького клубу "Парі Сен-Жермен" Неймар
+                        Jr. нарешті повернувся в стрій і готовий до повернення на футбольне поле. Бразильський нападник,
+                        який отримав пошкодження в матчі Ліги чемпіонів минулого місяця, успішно пройшов реабілітацію
+                        і тренування під керівництвом медичного штабу клубу.</p>
+                    <p>Травма, яку отримав Неймар, викликала побоювання серед уболівальників і тренерського штабу "ПСЖ", але
+                        завдяки ретельному медичному втручанню і наполегливій праці самого футболіста, він
+                        відновився навіть раніше, ніж очікувалося.</p>
+                    <p>Очікується, що повернення Неймара на поле значно посилить атакувальний потенціал паризької
+                        команди і допоможе їй боротися за перемоги як у національному, так і в європейському масштабі.
+                        Шанувальники футболу з нетерпінням чекають на його повернення і сподіваються побачити блискучі виступи
+                        від цього талановитого гравця.</p>
                 </article>
                 <div id="table-container">
-                    <h2>Таблица результатов</h2>
+                    <h2>Таблица результатів</h2>
                     <table>
                         <tr>
                             <th>Дата</th>
-                            <th>Соперник</th>
-                            <th>Счет</th>
-                            <th>Турнир</th>
+                            <th>Суперники</th>
+                            <th>Рахунок</th>
+                            <th>Турнір</th>
                         </tr>
                         <tr>
                             <td>01.04.2024</td>
-                            <td>Реал Мадрид</td>
-                            <td>3:1</td>
+                            <td class="team-cell">
+                                Реал Мадрид <img src="img/Real_Madrid.png" alt="Real Madrid" class="team-logo"> vs 
+                                <img src="img/Chelsea_FC.png" alt="Chelsea" class="team-logo"> Челси
+                            </td>
+                            <td>4:3</td>
                             <td>Лига Чемпионов</td>
                         </tr>
                         <tr>
                             <td>10.04.2024</td>
-                            <td>Ливерпуль</td>
+                            <td class="team-cell">
+                                Ливерпуль <img src="img/FC_Liverpool_Logo.png" alt="Liverpool" class="team-logo"> vs 
+                                <img src="img/Manchester_City_FC_badge.svg.png" alt="Manchester City" class="team-logo"> Манчестер сіті
+                            </td>
                             <td>2:0</td>
                             <td>Лига 1</td>
                         </tr>
                         <tr>
                             <td>12.04.2024</td>
-                            <td>Барселона</td>
+                            <td class="team-cell">
+                                Барселона <img src="img/FC_Barcelona.png" alt="Barcelona" class="team-logo"> vs 
+                                <img src="img/Manchester_United.png" alt="Manchester United" class="team-logo"> Манчестер Юнайтед
+                            </td>
                             <td>1:1</td>
                             <td>Лига 1</td>
                         </tr>
+                        <tr>
+                            <td>23.05.2024</td>
+                            <td class="team-cell">
+                                Кальярі <img src="img/Kalyari.png" alt="Kalyair" class="team-logo"> vs
+                                <img src="img/Fiorentina.png" alt="Feorentino" class="team-logo"> Феорентіна
+                            </td>
+                            <td>2:3</td>
+                            <td>Італія, 38 тур</td>
+                        </tr>
+                        <tr>
+                            <td>24.05.2024</td>
+                            <td class="team-cell">
+                                ЛНЗ <img src="img/LNZ.png" alt="LNZ" class="team-logo"> vs 
+                                <img src="img/FC_Vorskla_Poltava.png" alt="Vorskla" class="team-logo"> Ворскла
+                            </td>
+                            <td>1:0</td>
+                            <td>Україна, 30 тур</td>
+                        </tr>
+                        <tr>
+                            <td>24.05.2024</td>
+                            <td class="team-cell">
+                                Жирона <img src="img/Girona.png" alt="Jurona" class="team-logo"> vs 
+                                <img src="img/Granada.png" alt="Granada" class="team-logo"> Гранада
+                            </td>
+                            <td>7:0</td>
+                            <td>Іспанія, 38 тур</td>
+                        </tr>
+                        <tr>
+                            <td>24.04.2024</td>
+                            <td class="team-cell">
+                                Дженоа <img src="img/Genoa.png" alt="Djeona" class="team-logo"> vs 
+                                <img src="img/Bologna.png" alt="Bolonia" class="team-logo"> Болонья
+                            </td>
+                            <td>2:0</td>
+                            <td>Італія, 38 тур</td>
+                        </tr>
+                        <tr>
+                            <td>25.04.2024</td>
+                            <td class="team-cell">
+                                Осасуна <img src="img/Osasuna.png" alt="Osasuna" class="team-logo"> vs 
+                                <img src="img/Villarreal.png" alt="Vilyarreal" class="team-logo"> Вільярреал
+                            </td>
+                            <td>1:1</td>
+                            <td>Іспанія, 38 тур</td>
+                        </tr>
+                        <tr>
+                            <td>25.04.2024</td>
+                            <td class="team-cell">
+                                Реал Сосьєдад <img src="img/Sociedad.png" alt="Real_Sosedad" class="team-logo"> vs 
+                                <img src="img/Atletico.png" alt="Atletico" class="team-logo"> Атлетіко
+                            </td>
+                            <td>0:2</td>
+                            <td>Іспанія, 38 тур</td>
+                        </tr>
+                        <tr>
+                            <td>25.05.2024</td>
+                            <td class="team-cell">
+                                Альмерія <img src="img/Almeria.png" alt="Almeria" class="team-logo"> vs 
+                                <img src="img/Cádiz.png" alt="Kadis" class="team-logo"> Кадіс
+                            </td>
+                            <td>6:1</td>
+                            <td>Іспанія, 38 тур</td>
+                        </tr>
+                        <tr>
+                            <td>25.05.2024</td>
+                            <td class="team-cell">
+                                Ювентус <img src="img/Juventus_FC_2017_icon_(black).svg.png" alt="Uventus" class="team-logo"> vs 
+                                <img src="img/AC_Monza.svg.png" alt="Monza" class="team-logo"> Монца
+                            </td>
+                            <td>2:0</td>
+                            <td>Італія, 38 тур</td>
+                        </tr>
+                        <tr>
+                            <td>25.05.2024</td>
+                            <td class="team-cell">
+                                Мілан <img src="img/Logo_of_AC_Milan.svg.png" alt="Milan" class="team-logo"> vs 
+                                <img src="img/Salernitana_sport.png" alt="Salentina" class="team-logo"> Салернітана
+                            </td>
+                            <td>0:0</td>
+                            <td>Італія, 38 тур</td>
+                        </tr> 
                     </table>
                 </div>
-
-
-
-
                 
-                <div class="pricing">
+                
+                <div id="matches-container-wrapper">
+                    <button id="scroll-left">&laquo;</button>
+                    <div id="matches-container">
+                        <div class="match-card">
+                            <div class="tournament">Прем'єр-Ліга</div>
+                            <div class="time">29'</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/Кривбасс.png" alt="Kryvbas" class="team-logo"> Кривбас
+                                </div>
+                                <div class="score">0</div>
+                            </div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/ФК_Минай_2020.png" alt="Minaj" class="team-logo"> ФК Минай
+                                </div>
+                                <div class="score">0</div>
+                            </div>
+                        </div>
+                        <div class="match-card">
+                            <div class="tournament">Прем'єр-Ліга</div>
+                            <div class="time">29'</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/Чорноморець_Одеса.gif" alt="Chornomorets" class="team-logo"> Чорноморець
+                                </div>
+                                <div class="score">0</div>
+                            </div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/SC_Dnipro-1_(Ukraine)_white_background_CMYK.svg.png" alt="Dnipro-1" class="team-logo"> СК Дніпро-1
+                                </div>
+                                <div class="score">0</div>
+                            </div>
+                        </div>
+                        <div class="match-card">
+                            <div class="tournament">Прем'єр-Ліга</div>
+                            <div class="time">29'</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/Rukh_Lviv_logo_2019.png" alt="Rukh" class="team-logo"> Рух
+                                </div>
+                                <div class="score">0</div>
+                            </div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/Dynamo.png" alt="Dynamo" class="team-logo"> Динамо
+                                </div>
+                                <div class="score">0</div>
+                            </div>
+                        </div>
+                        <div class="match-card">
+                            <div class="tournament">Прем'єр-Ліга</div>
+                            <div class="time">29'</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/FC_Pollisya.png" alt="Polissya" class="team-logo"> Полісся
+                                </div>
+                                <div class="score">0</div>
+                            </div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/FC_Shakhtar.png" alt="Shakhtar" class="team-logo"> Шахтар
+                                </div>
+                                <div class="score">0</div>
+                            </div>
+                        </div>
+                        <div class="match-card">
+                            <div class="tournament">Прем'єр-Ліга</div>
+                            <div class="time">29'</div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/FC_Metalist_1925_Kharkiv_logo.png" alt="Metalist 1925" class="team-logo"> Металіст 1925
+                                </div>
+                                <div class="score">0</div>
+                            </div>
+                            <div class="teams">
+                                <div class="team">
+                                    <img src="img/Емблема_РНК_Верес_2020.png" alt="Veres" class="team-logo"> Верес
+                                </div>
+                                <div class="score">0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="scroll-right">&raquo;</button>
+                </div>
+                
+                
+                <div id="teams", class="pricing">
                     <div class="container">
                       
                         <div class="pricing__grid">
                             <div class="pricing__card pricing-card pricing-card_free">
                                 <div class="pricing-card__top">
-                                    <div class="pricing-card__title">Tottenham</div>
+                                    <div class="pricing-card__title">Toттенгем</div>
                                     <img src="img/e_000179_f_l.png.png" alt="">
                                 </div>
                                 <div class="pricing-card__body">
                                     <div class="pricing-card__pluses">
                                         <div class="pricing-card__plus">
                                             <div class="pricing-card__plus-text">
-                                                <h1>Постекоглу просит Тоттенхэм подписать летом как минимум трёх игроков/</h1>
+                                                <h1>Постекоглу просить Тоттенгем підписати влітку щонайменше трьох гравців/</h1>
                                             </div>
                                         </div>
 
                                     </div>
-                                    <div class="pricing-card__button"><a href="">Select</a></div>
+                                    <div class="pricing-card__button"><a href="">Виберіть</a></div>
                                 </div>
                             </div>
                             <div class="pricing__card pricing-card">
                                 <div class="pricing-card__top">
-                                    <div class="pricing-card__title">Regional Club</div>
-                                    <div class="pricing-card__price">$9<span>/month</span></div>
+                                    <div class="pricing-card__title">Регіональний клуб</div>
+                                    <div class="pricing-card__price">$9<span>/в місяць</span></div>
                                 </div>
                                 <div class="pricing-card__body">
                                     <div class="pricing-card__pluses">
                                         <div class="pricing-card__plus">
-                                            <div class="pricing-card__plus-icon"><i class="material-icons">done_all</i></div>
-                                            <div class="pricing-card__plus-text">Full access to team statistics</div>
+                                            <div class="pricing-card__plus-icon"><i class="material-icons">Все зроблено</i></div>
+                                            <div class="pricing-card__plus-text">Повний доступ до командної статистики</div>
                                         </div>
                                         <div class="pricing-card__plus">
-                                            <div class="pricing-card__plus-icon"><i class="material-icons">done_all</i></div>
-                                            <div class="pricing-card__plus-text">Game analysis tools</div>
+                                            <div class="pricing-card__plus-icon"><i class="material-icons">Все зроблено</i></div>
+                                            <div class="pricing-card__plus-text">Інструменти для аналізу ігор</div>
                                         </div>
                                         <div class="pricing-card__plus">
-                                            <div class="pricing-card__plus-icon"><i class="material-icons">done_all</i></div>
-                                            <div class="pricing-card__plus-text">Customizable tactics board</div>
+                                            <div class="pricing-card__plus-icon"><i class="material-icons">Все зроблено</i></div>
+                                            <div class="pricing-card__plus-text">Налаштовувана тактична дошка</div>
                                         </div>
                                         <div class="pricing-card__plus">
-                                            <div class="pricing-card__plus-icon"><i class="material-icons">done_all</i></div>
-                                            <div class="pricing-card__plus-text">Recruitment features</div>
+                                            <div class="pricing-card__plus-icon"><i class="material-icons">Все зроблено</i></div>
+                                            <div class="pricing-card__plus-text">Особливості підбору персоналу</div>
                                         </div>
                                     </div>
-                                    <div class="pricing-card__button"><a href="">Select</a></div>
+                                    <div class="pricing-card__button"><a href="">Виберіть</a></div>
                                 </div>
                             </div>
                             <div class="pricing__card pricing-card pricing-card_premium">
                                 <div class="pricing-card__top">
-                                    <div class="pricing-card__title">Professional Team</div>
-                                    <div class="pricing-card__price">$14<span>/month</span></div>
+                                    <div class="pricing-card__title">Професійна команда</div>
+                                    <div class="pricing-card__price">$14<span>/в місяць</span></div>
                                 </div>
                                 <div class="pricing-card__body">
                                     <div class="pricing-card__pluses">
                                         <div class="pricing-card__plus">
-                                            <div class="pricing-card__plus-icon"><i class="material-icons">done_all</i></div>
-                                            <div class="pricing-card__plus-text">Advanced match analysis</div>
+                                            <div class="pricing-card__plus-icon"><i class="material-icons">Все зроблено</i></div>
+                                            <div class="pricing-card__plus-text">Розширений аналіз матчів</div>
                                         </div>
                                         <div class="pricing-card__plus">
-                                            <div class="pricing-card__plus-icon"><i class="material-icons">done_all</i></div>
-                                            <div class="pricing-card__plus-text">Opponent scouting reports</div>
+                                            <div class="pricing-card__plus-icon"><i class="material-icons">Все зроблено</i></div>
+                                            <div class="pricing-card__plus-text">Звіти розвідки противника</div>
                                         </div>
                                         <div class="pricing-card__plus">
-                                            <div class="pricing-card__plus-icon"><i class="material-icons">done_all</i></div>
-                                            <div class="pricing-card__plus-text">Professional coaching resources</div>
+                                            <div class="pricing-card__plus-icon"><i class="material-icons">Все зроблено</i></div>
+                                            <div class="pricing-card__plus-text">Ресурси для професійного коучингу</div>
                                         </div>
                                         <div class="pricing-card__plus">
-                                            <div class="pricing-card__plus-icon"><i class="material-icons">done_all</i></div>
-                                            <div class="pricing-card__plus-text">Exclusive team strategies</div>
+                                            <div class="pricing-card__plus-icon"><i class="material-icons">Все зроблено</i></div>
+                                            <div class="pricing-card__plus-text">Ексклюзивні командні стратегії</div>
                                         </div>
                                     </div>
-                                    <div class="pricing-card__button"><a href="">Select</a></div>
+                                    <div class="pricing-card__button"><a href="">Виберіть</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
+                <div  id="Leaguetable" class="league-table">
+                    <h2>Турнірна таблиця</h2>
+                    <select id="league-selector" onchange="changeLeague()">
+                        <option value="ukraine">Чемпіонат України</option>
+                        <option value="england">Чемпіонат Англії</option>
+                    </select>
+                    <table id="ukraine-table" class="league-table-content">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Команда</th>
+                                <th>І</th>
+                                <th>В</th>
+                                <th>Н</th>
+                                <th>П</th>
+                                <th>О</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="img/FC_Shakhtar.png" alt="Шахтар" class="team-logo"> Шахтар</td>
+                                <td>30</td>
+                                <td>22</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td>71</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="img/Dynamo.png" alt="Динамо" class="team-logo"> Динамо</td>
+                                <td>30</td>
+                                <td>22</td>
+                                <td>3</td>
+                                <td>5</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="img/Кривбасс.png" alt="Кривбас" class="team-logo"> Кривбас</td>
+                                <td>30</td>
+                                <td>17</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>57</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="img/SC_Dnipro-1_(Ukraine)_white_background_CMYK.svg.png" alt="СК Дніпро-1" class="team-logo"> СК Дніпро-1 </td>
+                                <td>30</td>
+                                <td>14</td>
+                                <td>10</td>
+                                <td>6</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img src="img/FC_Pollisya.png" alt="Polissya" class="team-logo"> Полісся </td>
+                                <td>30</td>
+                                <td>14</td>
+                                <td>8</td>
+                                <td>8</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><img src="img/Rukh_Lviv_logo_2019.png" alt="Рух" class="team-logo"> Рух </td>
+                                <td>30</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>5</td>
+                                <td>49</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><img src="img/LNZ.png" alt="LNZ" class="team-logo"> ЛНЗ </td>
+                                <td>30</td>
+                                <td>11</td>
+                                <td>8</td>
+                                <td>11</td>
+                                <td>41</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><img src="img/FC_Oleksandriya_Logo.png" alt="ФК Олександрія" class="team-logo"> ФК Олександрія </td>
+                                <td>30</td>
+                                <td>8</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>34</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><img src="img/FC_Vorskla_Poltava.png" alt="Ворскла" class="team-logo"> Ворскла </td>
+                                <td>30</td>
+                                <td>9</td>
+                                <td>6</td>
+                                <td>15</td>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><img src="img/FC_Zorya_Luhansk_logo.svg.png" alt="Зоря" class="team-logo"> Зоря </td>
+                                <td>30</td>
+                                <td>7</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><img src="img/FCKolos2018.svg.png" alt="Колос" class="team-logo"> Колос </td>
+                                <td>30</td>
+                                <td>7</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><img src="img/FK-Chornomorets-.jpg" alt="Чорноморець" class="team-logo"> Чорноморець </td>
+                                <td>30</td>
+                                <td>10</td>
+                                <td>2</td>
+                                <td>18</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><img src="img/Емблема_РНК_Верес_2020.png" alt="Верес" class="team-logo"> Верес </td>
+                                <td>30</td>
+                                <td>6</td>
+                                <td>10</td>
+                                <td>14</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><img src="img/Емблема_ФК_Оболонь_(2020).png" alt="Оболонь" class="team-logo"> Оболонь </td>
+                                <td>30</td>
+                                <td>5</td>
+                                <td>11</td>
+                                <td>14</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td><img src="img/ФК_Минай_2020.png" alt="ФК Минай" class="team-logo"> ФК Минай </td>
+                                <td>30</td>
+                                <td>5</td>
+                                <td>10</td>
+                                <td>15</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td><img src="img/FC_Metalist_1925_Kharkiv_logo.png" alt="Металіст 1925" class="team-logo"> Металіст 1925 </td>
+                                <td>30</td>
+                                <td>5</td>
+                                <td>8</td>
+                                <td>17</td>
+                                <td>23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table id="england-table" class="league-table-content" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Команда</th>
+                                <th>І</th>
+                                <th>В</th>
+                                <th>Н</th>
+                                <th>П</th>
+                                <th>О</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="img/Manchester_City_FC_badge.svg.png" alt="Манчестер Сіті" class="team-logo"> Манчестер Сіті</td>
+                                <td>38</td>
+                                <td>28</td>
+                                <td>7</td>
+                                <td>3</td>
+                                <td>91</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="img/Arsenal_FC.svg.png" alt="Арсенал" class="team-logo"> Арсенал</td>
+                                <td>38</td>
+                                <td>28</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="img/FC_Liverpool_Logo.png" alt="Ліверпуль" class="team-logo"> Ліверпуль </td>
+                                <td>38</td>
+                                <td>24</td>
+                                <td>10</td>
+                                <td>4</td>
+                                <td>82</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="img/Aston_Villa_FC_crest_(2016).svg.png" alt="Астон Вілла" class="team-logo"> Астон Вілла </td>
+                                <td>38</td>
+                                <td>20</td>
+                                <td>8</td>
+                                <td>10</td>
+                                <td>68</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img src="img/Tottenham_Hotspur.svg.png" alt="Тоттенгем" class="team-logo"> Тоттенгем </td>
+                                <td>38</td>
+                                <td>20</td>
+                                <td>6</td>
+                                <td>12</td>
+                                <td>66</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><img src="img/Chelsea_FC.png" alt="Челсі" class="team-logo"> Челсі </td>
+                                <td>38</td>
+                                <td>18</td>
+                                <td>9</td>
+                                <td>11</td>
+                                <td>63</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><img src="img/Newcastle_United_Logo.svg.png" alt="Ньюкасл" class="team-logo"> Ньюкасл </td>
+                                <td>38</td>
+                                <td>18</td>
+                                <td>6</td>
+                                <td>14</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><img src="img/Manchester_United.png" alt="Манчестер Юнайтед" class="team-logo"> Манчестер Юнайтед </td>
+                                <td>38</td>
+                                <td>18</td>
+                                <td>6</td>
+                                <td>14</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><img src="img/West_Ham_United_FC_logo_2015.svg.png" alt="Вест Хем Юнайтед" class="team-logo"> Вест Хем Юнайтед </td>
+                                <td>38</td>
+                                <td>14</td>
+                                <td>10</td>
+                                <td>14</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><img src="img/Crystal_Palace_FC_logo.svg.png" alt="Крістал Пелес" class="team-logo"> Крістал Полес </td>
+                                <td>38</td>
+                                <td>13</td>
+                                <td>10</td>
+                                <td>15</td>
+                                <td>49</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><img src="img/Brighton_&_Hove_Albion_Logo.svg.png" alt="Брайтон енд Хоув Альбіон" class="team-logo"> Брайтон енд Хоув Альбіон </td>
+                                <td>38</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>14</td>
+                                <td>48</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><img src="img/Afc_bournemouth.svg.png" alt="Борнмут" class="team-logo"> Борнмут </td>
+                                <td>38</td>
+                                <td>13</td>
+                                <td>9</td>
+                                <td>16</td>
+                                <td>48</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><img src="img/Fulham_Logo.svg.png" alt="Фулгем" class="team-logo"> Фулгем </td>
+                                <td>38</td>
+                                <td>13</td>
+                                <td>8</td>
+                                <td>17</td>
+                                <td>47</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><img src="img/Wolverhampton_Wanderers_Logo.svg.png" alt="Вулверхемптон" class="team-logo"> Вулверхемптон </td>
+                                <td>38</td>
+                                <td>13</td>
+                                <td>7</td>
+                                <td>18</td>
+                                <td>46</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td><img src="img/Everton_F.C._(2014–).png" alt="Евертон" class="team-logo"> Евертон </td>
+                                <td>38</td>
+                                <td>13</td>
+                                <td>9</td>
+                                <td>16</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td><img src="img/Brentford_FC_logo.png" alt="Брентфорд" class="team-logo"> Брентфорд </td>
+                                <td>38</td>
+                                <td>10</td>
+                                <td>9</td>
+                                <td>19</td>
+                                <td>39</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
                 
     </main> 
     <footer>
-        <p>&copy; 2024 Футбольная страница. Все права защищены.</p>
+        <p>&copy; 2024 Футбольна сторінка. Усі права захищені.</p>
     </footer>
+    <script>
+        document.getElementById('scroll-left').addEventListener('click', function() {
+            document.getElementById('matches-container').scrollBy({
+                left: -250,
+                behavior: 'smooth'
+            });
+        });
+        
+        document.getElementById('scroll-right').addEventListener('click', function() {
+            document.getElementById('matches-container').scrollBy({
+                left: 250,
+                behavior: 'smooth'
+            });
+        });
+    </script>        
 </body>
 <script src="index.js"></script>
 </html>
