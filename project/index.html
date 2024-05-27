@@ -373,13 +373,15 @@
                     </div>
                 </div>
                 
-                <div  id="Leaguetable" class="league-table">
+                <div class="league-table">
                     <h2>Турнірна таблиця</h2>
                     <select id="league-selector" onchange="changeLeague()">
                         <option value="ukraine">Чемпіонат України</option>
                         <option value="england">Чемпіонат Англії</option>
+                        <option value="italy">Чемпіонат Італії</option>
+                        <option value="france">Чемпіонат Франції</option>
                     </select>
-                    <table id="ukraine-table" class="league-table-content">
+                    <table id="ukraine-table" class="league-table-content active">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -538,7 +540,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <table id="england-table" class="league-table-content" style="display: none;">
+                    <table id="england-table" class="league-table-content">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -697,7 +699,326 @@
                             </tr>
                         </tbody>
                     </table>
+                    <table id="italy-table" class="league-table-content">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Команда</th>
+                                <th>І</th>
+                                <th>В</th>
+                                <th>Н</th>
+                                <th>П</th>
+                                <th>О</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="img/Internazionale_Milano_2021.svg.png" alt="Інтер" class="team-logo"> Інтер</td>
+                                <td>38</td>
+                                <td>29</td>
+                                <td>7</td>
+                                <td>2</td>
+                                <td>94</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="img/Logo_of_AC_Milan.svg.png" alt="Мілан" class="team-logo"> Мілан</td>
+                                <td>38</td>
+                                <td>22</td>
+                                <td>9</td>
+                                <td>7</td>
+                                <td>75</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="img/Juventus_FC_2017_icon_(black).svg.png" alt="Ювентус" class="team-logo"> Ювентус</td>
+                                <td>38</td>
+                                <td>19</td>
+                                <td>14</td>
+                                <td>5</td>
+                                <td>71</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img src="img/Atalanta.png" alt="Аталанта" class="team-logo"> Аталанта</td>
+                                <td>37</td>
+                                <td>21</td>
+                                <td>6</td>
+                                <td>10</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="img/Bologna.png" alt="Болонья" class="team-logo"> Болонья</td>
+                                <td>38</td>
+                                <td>18</td>
+                                <td>14</td>
+                                <td>6</td>
+                                <td>68</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><img src="img/Roma_logo_(2017).svg.png" alt="Рома" class="team-logo"> Рома</td>
+                                <td>38</td>
+                                <td>18</td>
+                                <td>9</td>
+                                <td>11</td>
+                                <td>63</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><img src="img/Lazio.png" alt="Лаціо" class="team-logo"> Лаціо</td>
+                                <td>38</td>
+                                <td>18</td>
+                                <td>7</td>
+                                <td>13</td>
+                                <td>61</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><img src="img/Fiorentina.png" alt="Фіорентина" class="team-logo"> Фіорентина</td>
+                                <td>37</td>
+                                <td>16</td>
+                                <td>9</td>
+                                <td>12</td>
+                                <td>57</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><img src="img/Torino_FC_Logo.svg.png" alt="Торіно" class="team-logo"> Торіно</td>
+                                <td>38</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>11</td>
+                                <td>53</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><img src="img/Neapel.png" alt="Наполі" class="team-logo"> Наполі</td>
+                                <td>38</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>11</td>
+                                <td>53</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><img src="img/Genoa.png" alt="Дженоа" class="team-logo"> Дженоа</td>
+                                <td>38</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>13</td>
+                                <td>49</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><img src="img/AC_Monza.svg.png" alt="Монца" class="team-logo"> Монца</td>
+                                <td>38</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>15</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><img src="img/Hellas_verona_logo_3.png" alt="Елас Верона" class="team-logo"> Елас Верона</td>
+                                <td>38</td>
+                                <td>9</td>
+                                <td>11</td>
+                                <td>18</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><img src="img/Лечче_ФК_(лого).png" alt="Лечче" class="team-logo"> Лечче</td>
+                                <td>38</td>
+                                <td>8</td>
+                                <td>14</td>
+                                <td>16</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td><img src="img/Udinese_calcio.png" alt="Удінезе" class="team-logo"> Удінезе</td>
+                                <td>38</td>
+                                <td>6</td>
+                                <td>19</td>
+                                <td>13</td>
+                                <td>37</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td><img src="img/Kalyari.png" alt="Кальярі" class="team-logo"> Кальярі</td>
+                                <td>38</td>
+                                <td>8</td>
+                                <td>12</td>
+                                <td>18</td>
+                                <td>36</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table id="france-table" class="league-table-content">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Команда</th>
+                                <th>І</th>
+                                <th>В</th>
+                                <th>Н</th>
+                                <th>П</th>
+                                <th>О</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="img/Paris_Saint-Germain_F.C..svg.png" alt="ПСЖ" class="team-logo"> Парі Сен-Жермен</td>
+                                <td>34</td>
+                                <td>22</td>
+                                <td>10</td>
+                                <td>2</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="img/Монако_(2013).png" alt="Монако" class="team-logo"> Монако</td>
+                                <td>34</td>
+                                <td>20</td>
+                                <td>7</td>
+                                <td>7</td>
+                                <td>67</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="img/Брест_ФК_(лого).png" alt="Брест" class="team-logo"> Брест</td>
+                                <td>34</td>
+                                <td>17</td>
+                                <td>10</td>
+                                <td>7</td>
+                                <td>61</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="img/лільOSC_2018_logo.svg.png" alt="Лілль" class="team-logo"> Лілль</td>
+                                <td>34</td>
+                                <td>16</td>
+                                <td>11</td>
+                                <td>7</td>
+                                <td>59</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img src="img/Nice_logo.png" alt="Ніцца" class="team-logo"> Ніцца</td>
+                                <td>34</td>
+                                <td>15</td>
+                                <td>10</td>
+                                <td>9</td>
+                                <td>55</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><img src="img/Olympique_Lyonnais.png" alt="Ліон" class="team-logo"> Ліон</td>
+                                <td>34</td>
+                                <td>16</td>
+                                <td>5</td>
+                                <td>13</td>
+                                <td>53</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><img src="img/Lens_Logo.svg.png" alt="Ланс" class="team-logo"> Ланс</td>
+                                <td>34</td>
+                                <td>14</td>
+                                <td>9</td>
+                                <td>11</td>
+                                <td>51</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><img src="img/Marseille_logo.svg.png" alt="Марсель" class="team-logo"> Марсель</td>
+                                <td>34</td>
+                                <td>13</td>
+                                <td>11</td>
+                                <td>10</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><img src="img/Stade_de_Reims_logo.png" alt="Реймс" class="team-logo"> Реймс</td>
+                                <td>34</td>
+                                <td>13</td>
+                                <td>8</td>
+                                <td>13</td>
+                                <td>47</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><img src="img/Stade_Rennais_Football_Club.svg.png" alt="Ренн" class="team-logo"> Ренн</td>
+                                <td>34</td>
+                                <td>12</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>46</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><img src="img/Тулуза_ФК_(лого).png" alt="Тулаза" class="team-logo"> Тулаза</td>
+                                <td>34</td>
+                                <td>11</td>
+                                <td>10</td>
+                                <td>13</td>
+                                <td>43</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><img src="img/MontpellierHSC_logo.png" alt="Монпельє" class="team-logo"> Монпельє</td>
+                                <td>34</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>41</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><img src="img/Rcstrasbourg.png" alt="Страсбур" class="team-logo"> Страсбур</td>
+                                <td>34</td>
+                                <td>10</td>
+                                <td>9</td>
+                                <td>15</td>
+                                <td>39</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><img src="img/Nantes_(avec_fond)_-_2019.svg.png" alt="Нант" class="team-logo"> Нант</td>
+                                <td>34</td>
+                                <td>9</td>
+                                <td>6</td>
+                                <td>15</td>
+                                <td>39</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td><img src="img/Гавр_ФК_(лого).png" alt="Гавр" class="team-logo"> Гавр</td>
+                                <td>34</td>
+                                <td>7</td>
+                                <td>11</td>
+                                <td>16</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td><img src="img/FC_Lorient.png" alt="Лор'ян" class="team-logo"> Лар'ян</td>
+                                <td>34</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>19</td>
+                                <td>29</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+                
                 
                 
     </main> 

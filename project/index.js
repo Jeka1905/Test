@@ -28,10 +28,17 @@ function scrollToLeaguetable() {
     });
   }
 }
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("scroll-left").addEventListener("click", function() {
+      var matchesContainer = document.getElementById("matches-container");
+      matchesContainer.scrollLeft -= 100; // Измените это значение по вашему усмотрению
+  });
 
-
-
-
+  document.getElementById("scroll-right").addEventListener("click", function() {
+      var matchesContainer = document.getElementById("matches-container");
+      matchesContainer.scrollLeft += 100; // Измените это значение по вашему усмотрению
+  });
+});
 
 
 function changeLeague() {
