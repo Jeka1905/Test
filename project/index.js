@@ -18,6 +18,7 @@ function scrollToTeams() {
   }
 }
 
+
 function scrollToLeaguetable() {
   var matchesBlock = document.getElementById("Leaguetable");
   if (matchesBlock) {
@@ -27,6 +28,11 @@ function scrollToLeaguetable() {
     });
   }
 }
+
+
+
+
+
 
 function changeLeague() {
   var selectedLeague = document.getElementById("league-selector").value;
