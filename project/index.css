@@ -595,6 +595,9 @@ th, td {
    margin: 10px auto;
    padding: 5px;
    border-radius: 40px;
+   background-color: #1b4cc8;
+   color: floralwhite;
+   font-weight: bold;
 }
 
 table {
@@ -606,7 +609,7 @@ table {
 
 th, td {
    padding: 10px;
-   border-bottom: 1px solid #ddd;
+   border-bottom: 1px solid #dddddd;
 }
 
 th {
